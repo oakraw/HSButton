@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+   <com.oakraw.HSButton
+       android:layout_width="100dp"
+       android:layout_height="wrap_content"
+       android:src="@mipmap/ic_launcher_round"
+       android:text="Button 1"
+       android:radius="12dp"/>
+
+   <com.oakraw.HSButton
+       android:id="@+id/button2"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:src="@mipmap/ic_launcher_round"
+       android:text="Button 2"
+       android:layout_marginTop="16dp"
+       android:textColor="@color/colorAccent"
+       android:radius="12dp"/>
+
+   <com.oakraw.HSButton
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:src="@mipmap/ic_launcher_round"
+       android:text="Button 3"
+       android:tint="?colorPrimary"
+       android:layout_marginTop="16dp"
+       android:textAppearance="?android:textAppearanceLarge"
+       android:radius="12dp"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HSButtonAttrs">
+        <attr name="android:src" />
+        <attr name="android:radius" />
+        <attr name="android:text" />
+        <attr name="android:tint" format="color|reference"/>
+        <attr name="android:textSize" />
+        <attr name="android:textAppearance" />
+        <attr name="android:textColor" format="color"/>
+    </declare-styleable>
+</resources>
