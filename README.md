@@ -7,7 +7,8 @@ Square button with an image on top.
 
 ### Installation
 
-    implementation 'androidx.cardview:cardview:1.0.0'
+	// CardView is required.
+	implementation 'androidx.cardview:cardview:1.0.0'
 	implementation 'com.oakraw:hs-button:0.1.0'
 	
 ### Usage
