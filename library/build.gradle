@@ -3,8 +3,8 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'HSButton'
+    bintrayRepo = 'HSButton'
+    bintrayName = 'com.oakraw.HSButton'
 
     publishedGroupId = 'com.oakraw'
     libraryName = 'HSButton'
@@ -46,6 +46,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    tasks.withType(Javadoc) {
+        failOnError false
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+        options.addStringOption('charSet', 'UTF-8')
+    }
+
+    compileOptions {
+        kotlinOptions.freeCompilerArgs += ["-module-name", "$publishedGroupId.$libraryName"]
+    }
 }
 
 dependencies {
@@ -58,5 +69,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
