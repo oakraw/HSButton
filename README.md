@@ -1,6 +1,6 @@
 # HSButton
 Square button with an image on top.
-[ ![Download](https://api.bintray.com/packages/oakraw/HSButton/com.oakraw.HSButton/images/download.svg?version=0.1.0) ](https://bintray.com/oakraw/HSButton/com.oakraw.HSButton/0.1.0/link)
+[ ![Download](https://api.bintray.com/packages/oakraw/HSButton/com.oakraw.HSButton/images/download.svg?version=0.1.1) ](https://bintray.com/oakraw/HSButton/com.oakraw.HSButton/0.1.1/link)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![FancyButtons Android](https://raw.githubusercontent.com/oakraw/HSButton/master/screenshot.png)
